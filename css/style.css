@@ -1,0 +1,168 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  background-color: #f3eeee;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+h1 {
+  padding: 40px;
+  color: #0f0202;
+}
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  background-color: #f3eeee;
+}
+ul {
+  display: flex;
+}
+li {
+  list-style: none;
+  padding-right: 20px;
+}
+a {
+  text-decoration: none;
+  color: #0f0202;
+  font-size: 20px;
+}
+.btn {
+  color: #0f0202;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 2px solid #0f0202;
+}
+.btn:hover {
+  background-color: #0f0202;
+  color: #f3eeee;
+}
+main {
+  display: flex;
+  gap: 40px;
+  margin: 50px;
+  align-items: center;
+}
+main div {
+  background: rgba(255, 255, 255, 0.07);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(12.3px);
+  -webkit-backdrop-filter: blur(12.3px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 20px;
+  margin: 30px;
+  width: 40%;
+}
+h2,
+p,
+input {
+  color: #0f0202;
+  margin: 20px;
+}
+
+input {
+  width: calc(100% - 50px);
+  box-sizing: border-box;
+  padding: 15px;
+  outline: none;
+  border: rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+}
+
+button[type="submit"] {
+  box-sizing: border-box;
+  padding: 10px;
+  outline: none;
+  border: 2px solid #0f0202;
+  margin: 0 20px;
+  width: calc(100% - 50px);
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+button[type="submit"]:hover {
+  background-color: #0f0202;
+  color: #f3eeee;
+}
+
+footer {
+  text-align: center;
+}
+
+.btn-open {
+  display: none;
+  padding: 20px 40px;
+}
+
+
+.menu-mobile {
+    width: 100%;
+  display: none;
+  padding: 40px;
+  text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+  header {
+    align-items: center;
+  }
+  h1 {
+    padding: 20px;
+    text-align: left;
+    display: inline-block;
+  }
+  nav {
+    display: none;
+  }
+  main {
+    flex-direction: column;
+  }
+  main div {
+    width: 90%;
+  }
+  img {
+    max-width: 70%;
+    width: 500px;
+    height: auto;
+  }
+  .btn-open {
+    width: fit-content;
+    display: inline-block;
+    padding-right: 20px;
+  }
+  .menu-mobile {
+    width: 100%;
+    padding: 30px;
+  }
+  .menu-mobile-list {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  .btn-mobile {
+    color: #0f0202;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 2px solid #0f0202;
+    padding: 10px;
+  }
+  .menu-mobile-item {
+    padding: 20px;
+  }
+  #btnFechar {
+    padding: 20px;
+  }
+}
+
